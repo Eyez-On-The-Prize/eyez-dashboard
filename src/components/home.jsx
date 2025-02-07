@@ -47,25 +47,25 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen ">
       {/* Sidebar */}
-      <aside className="w-64 bg-blue-900 text-white p-6 hidden md:block">
+      <aside className="w-64 bg-purple-900 text-white p-6 hidden md:block">
         <h2 className="text-2xl font-bold mb-6">Dashboard</h2>
         <ul>
-          <li className="py-2 px-4 bg-blue-700 rounded-md">Coupons</li>
+          <li className="py-2 px-4 bg-purple-700 rounded-md">Coupons</li>
         </ul>
       </aside>
 
       {/* Main Content */}
       <main className="flex-1 p-6">
         {/* Header */}
-        <div className="bg-white p-4 rounded-lg shadow-md flex justify-between items-center mb-6">
+        <div className="bg-purple-500 p-4 rounded-lg shadow-md flex justify-between items-center mb-6">
           <h1 className="text-2xl font-bold">Eyez-On-The-Prize-AutoSpa</h1>
           <div className="relative">
             <input
               type="text"
-              placeholder="Search Emails..."
-              className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg w-64 focus:outline-none"
+              placeholder="Search"
+              className="pl-10 pr-4 py-2 border border-purple-300 rounded-lg w-64 focus:outline-none"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -77,7 +77,7 @@ export default function HomePage() {
         <div className="bg-white p-4 rounded-lg shadow-md overflow-x-auto">
           <table className="w-full border-collapse">
             <thead>
-              <tr className="bg-gray-200 text-gray-700">
+              <tr className="bg-purple-200 text-gray-700">
                 <th className="px-4 py-2 text-left">Email</th>
                 <th className="px-4 py-2 text-left">Discount Code</th>
                 <th className="px-4 py-2 text-left">Status</th>

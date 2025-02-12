@@ -93,10 +93,10 @@ export default function HomePage() {
                 
                 )
                 .map((coupon) => (
-                  <tr key={coupon._id} className="border-b hover:bg-gray-100 transition">
-                    <td className="px-4 py-2">{coupon.email}</td>
-                    <td className="px-4 py-2">{coupon.discountCode}</td>
-                    <td className="px-4 py-2 flex items-center gap-2">
+                  <tr key={coupon._id} className="border-b hover:bg-gray-100 transition text-black">
+                    <td className="px-4 py-2 text-black">{coupon.email}</td>
+                    <td className="px-4 py-2 text-black">{coupon.discountCode}</td>
+                    <td className="px-4 py-2 flex items-center gap-2 text-black">
                       {coupon.status ? (
                         <FaCheckCircle className="text-green-500" />
                       ) : (
